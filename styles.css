@@ -1,7 +1,61 @@
-/*index*/
+@charset "UTF-8";
+/*atelier polices*/
 body {
+  font-family: 'Roboto', sans-serif;
   text-align: center; }
 
+h2, h3, p {
+  padding: 5px 10px 0px 10px; }
+
+footer h3 {
+  font-family: 'Shrikhand', sans-serif; }
+
+.titre_resto {
+  font-family: 'Shrikhand', sans-serif;
+  text-align: left; }
+
+/*atelier coloriage */
+.bg_1 {
+  background-color: #9356DC; }
+
+.bg_2 {
+  background-color: #FF79DA; }
+
+.bg_3 {
+  background-color: #99E2D0; }
+
+.bg_white {
+  background-color: white; }
+
+.txt_2 {
+  color: #9356DC; }
+
+/* paramétrage des bulles de fonctionnement index */
+.bubble {
+  border-radius: 10px;
+  margin: 10px; }
+
+.bubble_shadow {
+  box-shadow: 7px 7px 7px #FF79DA; }
+
+article img {
+  border-radius: 10px 10px 0px 0px; }
+
+/* paramétrage des boutons "explorer" & "commander" */
+/* paramétrage des footers */
+.foot_color {
+  background-color: black;
+  color: white; }
+  .foot_color a:link {
+    color: white; }
+  .foot_color a:visited {
+    color: #9356DC; }
+  .foot_color a:hover {
+    color: #99E2D0; }
+  .foot_color a:active {
+    color: #99E2D0; }
+
+/*index*/
 #fonctio h1 {
   text-align: left; }
 
@@ -15,15 +69,23 @@ body {
   flex-wrap: wrap; }
 
 .present_rest img {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 95%;
-  max-width: 600px;
-  min-width: 300px;
+  width: 100%;
+  max-width: 700px;
   height: auto; }
 
-@media (min-width: 600px) {
+/*menus*/
+#img_menu {
+  width: 100%;
+  max-width: 700px;
+  height: auto; }
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: left; }
+
+@media (min-width: 700px) {
   h1 {
     text-align: center; }
 
@@ -36,23 +98,13 @@ body {
     justify-content: space-around; }
 
   .liste_restos img {
-    min-width: 600px; } }
-/*menus*/
-/* xxx pblm min size*/
-#img_menu {
-  max-width: 600px;
-  min-width: 100px; }
+    min-width: 600px; }
 
-#menu {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  text-align: left; }
-
-@media (min-width: 900px) {
   #menu {
     flex-direction: row;
-    text-align: left;
-    justify-content: space-around; } }
+    justify-content: space-around; }
+
+  .titre_resto {
+    text-align: center; } }
 
 /*# sourceMappingURL=styles.css.map */
