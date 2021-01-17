@@ -1,0 +1,89 @@
+.plats {
+	position: relative;
+	border-radius: 25px;
+	height: 70px;
+	width: 350px;
+	cursor: pointer;
+}
+
+.plats:hover .plats_txt{
+	width: 220px;
+}
+
+.plats:hover .plats_prix{
+	width: 50px;
+	transform: translateX(-50px);
+	border-radius: 0px;
+}
+
+.plats:hover .plats_icone {
+	transform: translateX(-60px) rotate(360deg);
+}
+
+.plats:hover .plats_box_icone {
+	width: 80px;
+	transform-origin: right 0 0 ;
+}
+
+.plats_txt {
+	width: 270px;
+	height: 70px;
+	border-radius: 25px 0px 0px 25px; 
+	background-color: yellow;
+	transition: all 1s;
+}
+
+.plats_txt h3, p {
+	margin-left: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.plats_txt h3 {
+	padding-top: 10px;
+	margin-bottom: -10px;
+}
+
+
+.plats_prix {
+	position: absolute;
+  	top: 0px;
+  	left:270px;
+  	width: 80px;
+  	height: 70px;
+	background-color: pink;
+	border-radius: 0px 25px 25px 0px;
+	transition: all 1s;
+}
+
+.plats_prix p {
+	margin:auto;
+	margin-top: 40px;
+	text-align: left;
+	transition: all 1s;
+}
+
+.plats_icone {
+	position: absolute;
+	top: 20px;
+	right: -35px;
+	transition: all 1s;
+	color: white;
+}
+
+.plats_box_icone {
+	position: absolute;
+	top: 0px;
+	width: 0px;
+	height: 70px;
+	right: 0px;
+	transition: all 1s;
+	background-color: red;
+	border-radius: 0px 25px 25px 0px;
+	transform-origin: right 0 0 ;
+	border:0px;
+}
+
+
+
