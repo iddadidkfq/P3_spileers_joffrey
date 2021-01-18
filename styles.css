@@ -8,7 +8,6 @@ h2, h3, p {
 	padding: 5px 10px 0px 10px;
 }
 
-
 footer h3 {font-family: 'Shrikhand', sans-serif;} 
 
 .titre_resto {
@@ -17,10 +16,10 @@ footer h3 {font-family: 'Shrikhand', sans-serif;}
 }
 
 /*atelier coloriage */
-.bg_1 {background-color: #99E2D0}
-.bg_2 {background-color: #CBCBCB}
-.bg_3 {background-color: #E3E3E3}
-.bg_4 {background-color: #99E2D0} /**cyan**/
+.bg_1 {background-color: #99E2D0} /*cyan*/
+.bg_2 {background-color: #CBCBCB} /*dark grey*/
+.bg_3 {background-color: #E3E3E3} /*medium grey*/
+.bg_4 {background-color: #99E2D0} /*cyan*/
 .bg_white {background-color: white}
 
 /*skin des boutons*/
@@ -37,6 +36,8 @@ footer h3 {font-family: 'Shrikhand', sans-serif;}
 	box-shadow: 5px 6px 5px #CBCBCB;
 	}
 
+a {text-decoration: none;}
+
 /* paramétrage des bulles de fonctionnement index */
 
 .bubble {
@@ -48,6 +49,10 @@ footer h3 {font-family: 'Shrikhand', sans-serif;}
 	box-shadow: 7px 7px 7px #CBCBCB;
 }
 
+.bubble .fas {
+	color: #9356DC;
+}
+
 .relative {position: relative;}
 
 .absolute {
@@ -56,8 +61,6 @@ footer h3 {font-family: 'Shrikhand', sans-serif;}
 	position: absolute;
 	top: 25px;
 	right: 15px;
-
-
 }
 
 /* paramétrage des boutons des plats */
@@ -67,6 +70,7 @@ footer h3 {font-family: 'Shrikhand', sans-serif;}
 	width: 350px;
 	margin: 10px;
 }
+
 .plats {
 	position: absolute;
 	top : 0px;
@@ -161,29 +165,37 @@ footer h3 {font-family: 'Shrikhand', sans-serif;}
 	right: -70px;
 	border:0px;
 }
+
 /* paramétrage des footers */
 .foot_color { 
 	background-color: #373737;
 	color: white;
-	a:link {color:white;}
-	a:visited {color:#9356DC;}
-	a:hover {color:#99E2D0;}
-	a:active {color:#99E2D0;}
+}
+.foot_color a:link {color:white;}
+
+	a:visited color:#9356DC;
+	a:hover color:#99E2D0;
+	a:active color:#99E2D0;
+}
+
+/* paramétrage des headers */
+#omf_logo {
+	max-width: 300px;
+
 }
 
 /*index*/
-#fonctio	{
+#fonctio {
 	margin: auto; 
 	text-align: left;
-  }
+}
 
-#fonctio div	{
+#fonctio div {
 	display: flex;
   	flex-direction: column;
   	justify-content: space-between;
   	align-items: center;
-  }
-
+}
 
 #restos {
 	margin: auto;
@@ -201,7 +213,17 @@ footer h3 {font-family: 'Shrikhand', sans-serif;}
 	width: 100%;
 	max-width: 700px;
 	height: auto;
+	border-radius: 25px 25px 0px 0px;
 }
+
+.present_rest h2 {
+	text-align: left;
+}
+
+.present_rest p {
+	text-align: left;
+}
+
 /*menus*/
 #img_menu {
 	position : relative ;
@@ -245,7 +267,6 @@ footer h3 {font-family: 'Shrikhand', sans-serif;}
 	.liste_restos img {
 		min-width: 600px;
 	}
-
 
 	#menu {
 		flex-direction: row; 
