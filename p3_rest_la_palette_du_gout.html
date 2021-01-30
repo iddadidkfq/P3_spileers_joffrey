@@ -21,17 +21,20 @@
 
 </head>
 
-<body class="bg_3">
-	
-	<header>
-		
+<body class="bg_3">	
+	<header class="bg_white header_menu">
 		<!-- logo02 + bouton -->
-		<button>Back</button>
-		<img id ="omf_logo" src="imgs/ohmyfood.png" alt="ohmyfood logo">
-
+		<div class="btn_back  bg_white">
+			<i class="fas fa-arrow-left fa-2x"></i>
+		</div>
+		<div class="omf_flex_item bg_white">
+			<img id ="omf_logo" src="imgs/ohmyfood.png" alt="ohmyfood logo">
+		</div>
+		<div class="btn_back  bg_white">
+			&nbsp;
+		</div>
 	</header>
 
-	
 	<main>
 		<div id="img_menu">
 			<img src="imgs/jay-wennington-2.jpg" alt="la palette du goût">
@@ -45,28 +48,49 @@
 			<section class="entrees">
 				<!-- Entrées -->
 				<h2>Entrées</h2>
-				<article class="art">
+				<article class="relative">
 					<div class="plats">
-						<div class="plats_txt bg_white">
+						<div class="plats_txt">
 							<h3>Fricassée d'escargot</h3>
-							<p>Au piment d'espelette xxx xxx xxx</p>
-						</div> 
-						<div class="plats_prix bg_white">
+							<p>Au piment d'espelettexxx xxx x </p>
+						</div>
+						 <div class="plats_vides">
+						 	&nbsp;
+						 </div>
+						<div class="plats_prix">
 							<p>25€</p>	
 						</div>
 						<div class="plats_box_icone">
+							<i class="fas fa-check-circle fa-2x plats_icone"></i>
 						</div>
-						<i class="fas fa-check-circle fa-2x plats_icone"></i>
-					</div>
-					<div class="bg_3 plats_mask_icone">							
 					</div>
 				</article>
+				
+				<article class="relative">
+					<div class="plats">
+						<div class="plats_txt">
+							<h3>Fricassée d'escargot</h3>
+							<p>Au piment d'espelette</p>
+						</div>
+						 <div class="plats_vides">
+						 	
+						 	&nbsp;
+						 </div>
+						<div class="plats_prix">
+							<p>25€</p>	
+						</div>
+						<div class="plats_box_icone">
+							<i class="fas fa-check-circle fa-2x plats_icone"></i>
+						</div>
+					</div>
+				</article>
+				
 
 				<article class="art">
 					<div class="plats">
 						<div class="plats_txt bg_white">
 							<h3>Fricassée d'escargot</h3>
-							<p>Au piment d'espelette xxx xxx xxx</p>
+							<p>Au piment d'espelette </p>
 						</div> 
 						<div class="plats_prix bg_white">
 							<p>25€</p>	
@@ -214,16 +238,19 @@
 		</div>
 		<br>
 		<button class="bt_main">Commander</button>
+		<br>
+		<br>
 
 	</main>
 
 	<footer class="foot_color">
+
 		<!-- menu du footer -->
-	<h3>ohmyfood</h3>
-		<p><a href="">Proposer un restaurant</a></p>
-		<p><a href="">Devenir partenaire</a></p>
+		<h3>ohmyfood</h3>
+		<p><i class="fas fa-utensils"></i> &nbsp;&nbsp;<a href=""> Proposer un restaurant</a></p>
+		<p><i class="fas fa-hands-helping"></i> &nbsp;<a href=""> Devenir partenaire</a></p>
 		<p><a href="">Mentions légales</a></p>
-		<p><a href="">Contact</a></p> 
+		<p><a href="mailto:contact.ohmyfood@mailo.com">Contact</a></p>
 	</footer>
 
 </body>

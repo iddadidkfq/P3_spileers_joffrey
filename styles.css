@@ -8,7 +8,9 @@ h2, h3, p {
 	padding: 5px 10px 0px 10px;
 }
 
-footer h3 {font-family: 'Shrikhand', sans-serif;} 
+footer h3 {font-family: 'Shrikhand', sans-serif;
+
+padding-left: 28px;} 
 
 .titre_resto {
 	font-family: 'Shrikhand', sans-serif;
@@ -20,6 +22,7 @@ footer h3 {font-family: 'Shrikhand', sans-serif;}
 .bg_2 {background-color: #CBCBCB} /*dark grey*/
 .bg_3 {background-color: #E3E3E3} /*medium grey*/
 .bg_4 {background-color: #99E2D0} /*cyan*/
+.bg_5 {background-color: #9356DC} /*violet*/
 .bg_white {background-color: white}
 
 /*skin des boutons*/
@@ -30,172 +33,98 @@ footer h3 {font-family: 'Shrikhand', sans-serif;}
 	background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
 	font-size: 20px;
 	padding: 10px 24px;
-	border: none;
-	margin: 15px 20px 15px 20px; 
+	border: none; 
 	border-radius: 25px;
 	box-shadow: 5px 6px 5px #CBCBCB;
 	}
 
 a {text-decoration: none;}
 
-/* paramétrage des bulles de fonctionnement index */
-
-.bubble {
-	text-align: center;
-	width: 200px;
-	border-radius: 18px;
-	padding: 20px 10px 20px 10px;
-	margin: 10px;
-	box-shadow: 7px 7px 7px #CBCBCB;
-}
-
-.bubble .fas {
-	color: #9356DC;
-}
-
-.relative {position: relative;}
-
-.absolute {
-	width: 68px;
-	height: 20px;
-	position: absolute;
-	top: 25px;
-	right: 15px;
-}
-
-/* paramétrage des boutons des plats */
-.art {
-	position: relative;
-	height: 70px;
-	width: 350px;
-	margin: 10px;
-}
-
-.plats {
-	position: absolute;
-	top : 0px;
-	left : 0px;
-	border-radius: 25px;
-	cursor: pointer;
-	height: 70px;
-	width: 350px;
-}
-
-.plats:hover .plats_txt{
-	width: 220px;
-}
-
-.plats:hover .plats_prix{
-	width: 50px;
-	transform: translateX(-50px);
-	border-radius: 0px;
-}
-
-.plats:hover .plats_icone {
-	transform: translateX(-60px) rotate(360deg);
-}
-
-.plats:hover .plats_box_icone {
-	width: 80px;
-	transform-origin: right 0 0 ;
-}
-
-.plats_txt {
-	position: absolute;
-	top : 0px;
-	left : 0px;
-	width: 270px;
-	height: 70px;
-	border-radius: 25px 0px 0px 25px; 
-	transition: all 1s;
-}
-
-.plats_txt h3, p {
-	margin-top: 0px ;
-	margin-bottom: 10px ;
-	margin-left: 20px;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
-
-.plats_prix {
-	position: absolute;
-  	top: 0px;
-  	left:270px;
-  	width: 80px;
-  	height: 70px;
-	border-radius: 0px 25px 25px 0px;
-	transition: all 1s;
-}
-
-.plats_prix p {
-	margin:auto;
-	margin-top: 40px;
-	text-align: left;
-	transition: all 1s;
-}
-
-.plats_icone {
-	position: absolute;
-	top: 20px;
-	right: -35px;
-	transition: all 1s;
-	color: white;
-}
-
-.plats_box_icone {
-	position: absolute;
-	top: 0px;
-	width: 0px;
-	height: 70px;
-	right: 0px;
-	transition: all 1s;
-	background-color: #99E2D0;
-	border-radius: 0px 25px 25px 0px;
-	transform-origin: right 0 0 ;
-	border:0px;
-}
-
-.plats_mask_icone {
-	position: absolute;
-	top: 0px;
-	width: 70px;
-	height: 70px;
-	right: -70px;
-	border:0px;
-}
-
 /* paramétrage des footers */
+
+footer {
+	text-align: left;
+	padding-bottom: 25px;
+}
 .foot_color { 
 	background-color: #373737;
 	color: white;
+	padding-top: 1px;
 }
 .foot_color a:link {color:white;}
-
-	a:visited color:#9356DC;
-	a:hover color:#99E2D0;
-	a:active color:#99E2D0;
-}
+.foot_color a:visited {color:#9356DC;}
+.foot_color a:hover {color:#99E2D0;}
+.foot_color a:active {color:#99E2D0;}
 
 /* paramétrage des headers */
-#omf_logo {
-	max-width: 300px;
 
+.header_menu {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	padding-top: 10px;
+}
+
+#img_logo {
+	width:100%;
+	max-width: 300px;
+	height: auto;
+}
+.omf_flex_item{
+	flex-grow:3;
+}
+#omf_logo {
+	width:90%;
+	max-width:300px;
+
+}
+.btn_back {
+	max-width:20%;
+	flex-grow: 1;
 }
 
 /*index*/
-#fonctio {
-	margin: auto; 
+
+#presentation{
+	padding-bottom: 40px;
+}
+
+/* paramétrage des bulles de fonctionnement index */
+
+#fonctionnement {
+	display : flex;
+	flex-direction : column;
 	text-align: left;
 }
 
-#fonctio div {
-	display: flex;
-  	flex-direction: column;
-  	justify-content: space-between;
-  	align-items: center;
+.fonction {
+	position:relative;
+	margin-left: 25px;
+	text-align: left;
 }
+.fct_bubble {
+	border-radius: 25px;
+	padding:20px;
+	margin: 10px;
+	box-shadow: 7px 7px 7px #CBCBCB;
+}
+.fct_ico {
+	margin-right: 20px;
+	margin-left: 15px;
+	color: #9356DC; /* violet*/
+}
+
+.fct_chiffre {
+	position: absolute;
+	top:25px;
+	border-radius: 15px;
+	width:30px;
+	height:30px;
+	color:white;
+	text-align: center;
+}
+
 
 #restos {
 	margin: auto;
@@ -224,17 +153,86 @@ a {text-decoration: none;}
 	text-align: left;
 }
 
+
+
+.relative {position: relative;}
+
+.absolute_nouveau {	
+	width: 80px;
+	height: 20px;
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	text-align: center;
+}
+
+/*présentation restaurants index*/
+
+.cellule_index {
+
+	border-radius: 25px;
+	margin: 15px;
+}
+
+.cellule_index p {
+	margin-left: 0px;
+}
+
+.flex_present {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+
+	
+  		align-items: baseline;
+}
+
+.flex_present h2 {
+	flex-grow: 9;
+}
+
+.coeur {
+
+	flex-grow: 2;
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.coeur:hover .like{
+	display: inline-block;
+}
+.coeur:hover .like2{
+	display:none;
+}
+
+.like2 {
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color:red;
+}
+.like {
+	display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #9356DC;
+}
+
 /*menus*/
 #img_menu {
 	position : relative ;
 	margin: auto;
 	width: 100%;
-	max-width: 700px;
+	max-width: 600px;
 	height: auto;
 }
+
 #img_menu img{
 	width: 100%;
-	max-width: 700px;
+	max-width: 600px;
 	height: auto;
 }
 
@@ -253,10 +251,100 @@ a {text-decoration: none;}
 	border-radius: 30px 30px 0px 0px;
 }
 
+/* paramétrage des boutons des plats */
 
-@media (min-width: 700px){
+.plats {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-radius: 25px;
+	background-color: white;
+	cursor: pointer;
+	height: 70px;
+	width: 100%;
+	width:350px;
+}
+
+.plats:hover .plats_txt{
+	max-width:60%;
+}
+
+.plats:hover .plats_vides {
+	flex-grow: 0;
+}
+
+
+.plats:hover .plats_prix{
+	min-width:10%;
+}
+
+.plats:hover .plats_icone {
+	transform: rotate(360deg);
+	right: 35%;
+	color:  white;
+}
+
+.plats:hover .plats_box_icone {
+	flex-grow: 4;
+}
+
+.plats_txt {
+	transition: all 2s;
+	border-radius: 25px;
+	max-width:80%;
+}
+
+.plats_txt h3, p {
+	margin-top: 0px ;
+	margin-bottom: 10px ;
+	margin-left: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.plats_vides {
+	flex-grow: 4;
+	transition: all 2s;
+}
+
+.plats_prix {
+	transition: all 2s;
+	border-radius: 25px;
+	min-width:20%;
+}
+
+.plats_prix p {
+	margin:auto;
+	margin-top: 40px;
+	text-align: left;
+	transition: all 2s;
+}
+
+.plats_icone {
+	position: absolute;
+	right: -35px;
+	top:20px;
+	transition: all 2s;
+	color:  #E3E3E3;
+}
+
+.plats_box_icone {
+	position:relative;
+	transition: all 2s;
+	background-color: #99E2D0;
+	border-radius: 0px 25px 25px 0px;
+	border:0px;
+	flex-basis: 0px;
+}
+
+
+
+@media (min-width: 600px){
 
 	h1 {text-align: center;}
+
+	footer {text-align: center;}
 
 	#liste_restos {
 		flex-direction: row; 
@@ -277,4 +365,8 @@ a {text-decoration: none;}
 		text-align: center;
 	}
 
+	#fonctionnement {
+	  	flex-direction: row;
+		justify-content: space-around;
+	 }
 }
