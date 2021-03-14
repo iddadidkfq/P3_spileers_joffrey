@@ -3,14 +3,26 @@ body {
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
 }
-h2, h3, p {
 
+/*Chargement body_main*/
+.body_main {
+	animation-name: body_main;
+	animation-duration: 3s;
+}
+
+@keyframes body_main {
+	0% {overflow-y: hidden;} 
+	100% {overflow-y: hidden;} 
+} 
+
+h2, h3, p {
 	padding: 5px 10px 0px 10px;
 }
 
-footer h3 {font-family: 'Shrikhand', sans-serif;
-
-padding-left: 28px;} 
+footer h3 {
+	font-family: 'Shrikhand', sans-serif; 
+	padding-left: 28px;
+} 
 
 .titre_resto {
 	font-family: 'Shrikhand', sans-serif;
@@ -53,44 +65,48 @@ padding-left: 28px;}
 
 a {text-decoration: none;}
 
-/* paramétrage des footers */
 
-footer {
-	text-align: left;
-	padding-bottom: 25px;
+/*Chargement*/
+
+.chargement {
+	position: absolute;
+	background-color: white;
+	z-index: 1;
+	opacity: 0.6;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	animation-name: chargement;
+	animation-duration: 3s;
 }
-.foot_color { 
-	background-color: #373737;
-	color: white;
-	padding-top: 1px;
+
+@keyframes chargement {
+  	0% {left: 0%;}	
+  	100% {left: 0%;}
 }
-.foot_color a:link {color:white;}
-.foot_color a:visited {color:#9356DC;}
-.foot_color a:hover {color:#99E2D0;}
-.foot_color a:active {color:#99E2D0;}
 
 /*Spinner*/
 
-@keyframes spinner {
+.spinner {
+	animation-name: spinner;
+	animation-duration:3s;
+  	position: absolute;
+  	top: 300px;
+  	left: -100px;
+  	z-index: 2;
+}
 
+@keyframes spinner {
   0%   {
-  	color: black;
-  	display: block;
+  	left: 47%;
+    color: black;
 	transform: rotate(1080deg);
 	}
-
   100% {
+  	left: 47%;
   	color: #9356DC;
-	display: none;
 	}
 }
-
-.spinner
-{
-animation-name: spinner;
-animation-duration:3s;
-}
-
 
 /* paramétrage des headers */
 
@@ -113,7 +129,6 @@ animation-duration:3s;
 #omf_logo {
 	width:90%;
 	max-width:300px;
-
 }
 .btn_back {
 	max-width:20%;
@@ -123,8 +138,24 @@ animation-duration:3s;
 .header_menu a:visited {color:black;}
 .header_menu a:hover {color:#9356DC;}
 .header_menu a:active {color:#9356DC;}
-
 }
+
+/* paramétrage des footers */
+
+footer {
+	text-align: left;
+	padding-bottom: 25px;
+}
+.foot_color { 
+	background-color: #373737;
+	color: white;
+	padding-top: 1px;
+}
+.foot_color a:link {color:white;}
+.foot_color a:visited {color:#9356DC;}
+.foot_color a:hover {color:#99E2D0;}
+.foot_color a:active {color:#99E2D0;}
+
 
 /*index*/
 
@@ -173,7 +204,6 @@ animation-duration:3s;
 	text-align: left;
 }
 
-
 #liste_restos {
 	display: flex;
 	flex-direction: column;
@@ -195,8 +225,6 @@ animation-duration:3s;
 .present_rest p {
 	text-align: left;
 }
-
-
 
 .relative {position: relative;}
 
@@ -254,7 +282,6 @@ animation-duration:3s;
 }
 
 .like2 {
-
     position: absolute;
     top: 0px;
     left: 0px;
@@ -268,6 +295,7 @@ animation-duration:3s;
 }
 
 /*menus*/
+
 #img_menu {
 	position : relative ;
 	margin: auto;
@@ -313,21 +341,15 @@ animation-duration:3s;
 }
 
 @keyframes on_load{
-
 	0% {opacity: 0; margin-top: 20px; margin-bottom: 0px;}
-
-
 	100% {opacity: 1; margin-top: 0px; margin-bottom: 20px; }
-
 }
-
 
 /*
 $("#entrees").delay(500).fadeIn();
 $("#repas").delay(1000).fadeIn();
 $("#desserts").delay(1000).fadeIn();
 */
-
 
 /* paramétrage des boutons des plats */
 
@@ -352,7 +374,6 @@ $("#desserts").delay(1000).fadeIn();
 .plats:hover .plats_vides {
 	flex-grow: 0;
 }
-
 
 .plats:hover .plats_prix{
 	min-width:10%;
@@ -417,8 +438,6 @@ $("#desserts").delay(1000).fadeIn();
 	border:0px;
 	flex-basis: 0px;
 }
-
-
 
 @media (min-width: 600px){
 
