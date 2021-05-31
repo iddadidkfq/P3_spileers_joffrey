@@ -311,10 +311,10 @@ footer a:active {color:#99E2D0;}
 }
 
 hr {
-    text-align: left;
+    margin-left: 10px ;
 	margin-top: -15px;
 	margin-bottom: 18px;
-    width: 70px;
+    width: 60px;
     border: 2px solid #99E2D0;
 }
 
@@ -325,11 +325,15 @@ hr {
 }  
 
 #repas {
-	animation:on_load 3s ;
+	animation:on_load 5s;
+	animation-delay: 2s;
+	animation-fill-mode: backwards;
 }
 
 #desserts {
-	animation:on_load 3s;
+	animation:on_load 7s;
+	animation-delay: 4s;
+	animation-fill-mode: backwards;
 }
 
 @keyframes on_load{
@@ -430,7 +434,7 @@ $("#desserts").delay(1000).fadeIn();
 	background-color: #99E2D0;
 	border-radius: 0px 25px 25px 0px;
 	border:0px;
-	flex-basis: 0px;
+	flex-basis: 0px;	
 }
 
 @media (min-width: 600px){
