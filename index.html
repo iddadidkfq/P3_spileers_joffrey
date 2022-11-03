@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>ohmyfood</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+<!-- polices -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+
+	<!-- kit fontawesome pour icones demandé par OC -->
+    <script src="https://kit.fontawesome.com/39ca8d7fdb.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<!-- Viewport classique -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+</head>
+
+<body>
+	<div class="chargement bg_white"></div>
+	<i class="spinner fas fa-spinner fa-6x"></i>
+	
+	<header>
+
+		<!-- logo1 -->
+		<img id="img_logo" src="imgs/ohmyfood.png" alt="ohmyfood logo">
+
+	</header>
+
+	<section id="presentation" class="bg_3" >
+
+		<!-- header de présentation -->
+		<div class="bg_2">
+			<p><i class="fas fa-map-marker-alt margin-pb"></i>Paris, Belleville</p>
+		</div>
+		<h1>Réservez le menu qui vous convient</h1>
+		<p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+
+		<button class="bt_main"><a href="#restos">Explorer nos restaurants</a></button>
+		
+
+	</section>
+
+	<section>
+
+		<!-- menu de fonctionnement avec 3 bubbles -->
+		<h1>Fonctionnement</h1>
+		<div id="fonctionnement">
+
+			<nav class="fonction">
+				<div class="fct_bubble bg_3">
+					<i class="fas fa-mobile-alt fct_ico"></i>
+					Choisissez un restaurant
+				</div>
+				<div class="fct_chiffre bg_5"><sub>1</sub></div>
+			</nav>
+			<br>
+			<nav class="fonction">
+				<div class="fct_bubble bg_3">
+					<i class="fas fa-list-ul fct_ico"></i>
+					Composez votre menu
+				</div>
+				<div class="fct_chiffre bg_5"><sub>2</sub></div>
+			</nav>
+			<br>
+			<nav class="fonction">
+				<div class="fct_bubble bg_3">
+					<i class="fas fa-store fct_ico"></i>
+					Dégustez au restaurant
+				</div>
+				<div class="fct_chiffre bg_5"><sub>3</sub></div>
+			</nav>
+		</div>
+	</section>
+
+	<section id="restos" class="bg_3">
+
+		<!-- menu des resaurants -->
+		<h1>Restaurants</h1>
+
+		<div id="liste_restos" class="present_rest">
+			
+			<article class="bg_white cellule_index relative"> 
+				 <a href="rest_la_palette_du_gout.html">
+				 	<img src="imgs/jay-wennington-2.jpg" alt="la palette du goût"> 
+				 </a>
+				<div class="absolute_nouveau bg_1">Nouveau</div>
+				<div class="flex_present">
+					<h2>La palette du goût</h2>
+					<div class="coeur">
+						<i class="far fa-heart fa-2x like2"></i>
+						<i class="fas fa-heart fa-2x like"></i>
+					</div>
+				</div>
+				<p>Ménilmontant</p>
+			</article>
+
+			<article class="bg_white cellule_index relative">
+				<a href="rest_la_note_enchantée.html">
+					<img src="imgs/stil_2.jpg" alt="la note enchantée">
+				</a>
+				<div class="absolute_nouveau bg_1">Nouveau</div>
+				<div class="flex_present">
+					<h2>La note enchantée</h2>
+					
+					<div class="coeur">
+						<i class="far fa-heart fa-2x like2"></i>
+						<i class="fas fa-heart fa-2x like"></i>
+					</div>
+				</div>		
+				<p>Charonne</p>
+			</article>
+
+			<article class="bg_white cellule_index">
+				<a href="rest_a_la_francaise.html">
+					<img src="imgs/toa_heftiba_2.jpg" alt="la note enchantée">
+				</a>	
+					<div class="flex_present">
+						<h2>À la française</h2>
+						
+						<div class="coeur">
+							<i class="far fa-heart fa-2x like2"></i>
+							<i class="fas fa-heart fa-2x like"></i>
+						</div>
+					</div>
+				<p>Cité Rouge</p>
+			</article>
+
+			<article class="bg_white cellule_index">
+				<a href="rest_le_délice_des_sens.html">
+					<img src="imgs/louis_hansel_2.jpg" alt="la note enchantée">
+				</a>
+					<div class="flex_present">
+						<h2>Le délice des sens</h2>
+						
+						<div class="coeur">
+							<i class="far fa-heart fa-2x like2"></i>
+							<i class="fas fa-heart fa-2x like"></i>
+						</div>
+					</div>	
+				<p>Folie-Méricourt</p>
+			</article>
+
+		</div>
+
+	</section>
+
+	<footer>
+
+		<!-- menu du footer -->
+		<h3>ohmyfood</h3>
+		<p><i class="fas fa-utensils"></i> &nbsp;&nbsp;<a href=""> Proposer un restaurant</a></p>
+		<p><i class="fas fa-hands-helping"></i> &nbsp;<a href=""> Devenir partenaire</a></p>
+		<p><a href="">Mentions légales</a></p>
+		<p><a href="mailto:contact.ohmyfood@mailo.com">Contact</a></p>
+	</footer>
+
+</body>
+
+</html>
