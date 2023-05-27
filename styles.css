@@ -309,6 +309,7 @@ footer a:active {color:#99E2D0;}
 
 #menu {
 	display: flex;
+	flex-basis: auto;
 	justify-content: space-around;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -363,10 +364,9 @@ $("#desserts").delay(1000).fadeIn();
 	background-color: white;
 	cursor: pointer;
 	height: 70px;
-	width: 100%;
-	width:350px;
+	width:340px;
 	margin-bottom: 15px;
-	margin-right: 35px;
+	margin-right: 20px;
 	box-shadow: 3px 3px 4px #aaa;
 }
 
